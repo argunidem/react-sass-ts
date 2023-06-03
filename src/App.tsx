@@ -1,4 +1,4 @@
-import { Home, Navbar, PopularProducts } from './components';
+import { Home, Navbar, PopularProducts, Shopping } from './components';
 import './sass/main.scss';
 
 function App() {
@@ -7,6 +7,7 @@ function App() {
       <Navbar />
       <Home />
       <PopularProducts />
+      <Shopping />
     </>
   );
 }

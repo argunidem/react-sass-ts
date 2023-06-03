@@ -1,6 +1,12 @@
 import { HiOutlineHeart } from 'react-icons/hi';
 
-export default function Products({ img, price, name }) {
+type ProductsProps = {
+  img: string;
+  price: number;
+  name: string;
+};
+
+export default function Products({ img, price, name }: ProductsProps) {
   return (
     <div className='product'>
       <img

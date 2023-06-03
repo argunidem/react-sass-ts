@@ -1,4 +1,5 @@
 import { homeImages } from '../../data/data';
+
 function Home() {
   return (
     <section

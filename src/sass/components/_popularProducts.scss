@@ -43,6 +43,10 @@
     padding: 2rem 3.5rem;
     border-radius: 0.3rem;
 
+    @media screen and (min-width: $layout-breakpoint-small) {
+      padding-inline: 2rem;
+    }
+
     @media screen and (min-width: $layout-breakpoint-medium) {
       padding-inline: 5rem;
     }
