@@ -166,7 +166,7 @@ export const reviews = [
   },
 ];
 
-export const menuDatas = [
+export const menuData = [
   {
     id: 1,
     dataGroupName: 'Sofas',
