@@ -1,5 +1,5 @@
 import Navbar from './navbar/Navbar';
-import Home from './container/Home';
+import Categories from './container/Categories';
 import PopularProducts from './container/PopularProducts';
 import Shopping from './container/Shopping';
 import BuyOnline from './container/BuyOnline';
@@ -10,7 +10,7 @@ import ScrollToTop from './container/ScrollToTop';
 
 export {
   Navbar,
-  Home,
+  Categories,
   PopularProducts,
   Shopping,
   BuyOnline,

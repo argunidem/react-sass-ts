@@ -1,8 +1,8 @@
 import { reviews } from '../../data/data';
 import { BsStarFill } from 'react-icons/bs';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
+import 'swiper/swiper.min.css';
+import 'swiper/components/pagination/pagination.min.css';
 import SwiperCore, { Pagination, Autoplay } from 'swiper';
 
 SwiperCore.use([Autoplay, Pagination]);

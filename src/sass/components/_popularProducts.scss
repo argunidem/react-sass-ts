@@ -1,3 +1,14 @@
+$colors: #d7ccc190, #6e7ca760, #ededee, #eedfce, #f3eee5, #ded2c2, #eee8e9,
+  #e3b48190, #dbdfd7, #6e7ca740;
+
+.product {
+  @for $i from 1 through length($colors) {
+    &:nth-child(#{length($colors)}n + #{$i}) {
+      background: nth($colors, $i);
+    }
+  }
+}
+
 .popular_container {
   display: flex;
   align-items: center;
@@ -53,37 +64,6 @@
 
     @media screen and (min-width: $layout-breakpoint-large) {
       padding-inline: 3rem;
-    }
-
-    &:nth-child(1) {
-      background-color: #d7ccc1;
-    }
-
-    &:nth-child(2) {
-      background-color: #ededee;
-    }
-
-    &:nth-child(3) {
-      background-color: #eedfce;
-    }
-    &:nth-child(4) {
-      background-color: #f3eee5;
-    }
-
-    &:nth-child(5) {
-      background-color: #ded2c2;
-    }
-
-    &:nth-child(6) {
-      background-color: #eee8e9;
-    }
-
-    &:nth-child(7) {
-      background-color: #e3b481;
-    }
-
-    &:nth-child(8) {
-      background-color: #dbdfd7;
     }
 
     .product_img {

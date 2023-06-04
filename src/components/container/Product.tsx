@@ -6,12 +6,12 @@ type ProductsProps = {
   name: string;
 };
 
-export default function Products({ img, price, name }: ProductsProps) {
+export default function Product({ img, price, name }: ProductsProps) {
   return (
     <div className='product'>
       <img
         src={img}
-        alt=''
+        alt='Product'
         className='product_img'
       />
       <div className='nameAndPrice'>

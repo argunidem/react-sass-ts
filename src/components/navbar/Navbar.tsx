@@ -2,6 +2,7 @@ import { HiMenuAlt4, HiOutlineShoppingBag } from 'react-icons/hi';
 import { FiSearch } from 'react-icons/fi';
 import MenuNavigation from './MenuNavigation';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [menuToggle, setMenuToggle] = useState(false);
@@ -22,7 +23,7 @@ function Navbar() {
 
   return (
     <>
-      <div className='header'>
+      <header className='header'>
         <nav className='container'>
           <div className='menuSearch'>
             <div
@@ -33,13 +34,18 @@ function Navbar() {
             </div>
             <FiSearch />
           </div>
-          <div className='logo'>minim</div>
+          <Link
+            to='/'
+            className='logo'
+          >
+            minim
+          </Link>
           <div className='accountAndCart'>
             <a href='#'>account</a>
             <HiOutlineShoppingBag />
           </div>
         </nav>
-      </div>
+      </header>
       <MenuNavigation
         setMenuToggle={setMenuToggle}
         menuToggle={menuToggle}

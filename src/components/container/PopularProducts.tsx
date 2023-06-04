@@ -1,5 +1,5 @@
 import { products } from '../../data/data';
-import Products from './Products';
+import Product from './Product';
 
 function PopularProducts() {
   return (
@@ -17,7 +17,7 @@ function PopularProducts() {
       <div className='product_container'>
         {products.map((product) => {
           return (
-            <Products
+            <Product
               key={product.id}
               {...product}
             />

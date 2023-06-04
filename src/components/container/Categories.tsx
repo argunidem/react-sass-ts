@@ -1,6 +1,6 @@
 import { homeImages } from '../../data/data';
 
-function Home() {
+function Categories() {
   return (
     <section
       className='container'
@@ -20,5 +20,4 @@ function Home() {
     </section>
   );
 }
-
-export default Home;
+export default Categories;
